@@ -23,7 +23,7 @@ app.get('/messages', (req, res) => {
         res.send(messages)
     })
 })
- 
+
 app.post('/messages', (req, res) => {
     var message = new Message(req.body)
     message.save((err) =>{
