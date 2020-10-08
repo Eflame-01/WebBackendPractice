@@ -42,6 +42,6 @@ db.on('error', console.error.bind(console, 'MongoDB connection error'))
 
 var server = http.listen(3000 , ()=>{
     console.log("server is listening to port", server.address().port)
-}) 
+})
 
 io.listen(server)
